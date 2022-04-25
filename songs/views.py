@@ -32,6 +32,7 @@ def songs_details(request,pk):
         song.delete()
         return Response(status=status.HTTP_200_OK)
     elif request.method == 'PATCH':
+        song.likes +=  1
         serializer = SongSerializer(song, data = request.data,partial = True)
         if serializer.is_valid(raise_exception=True):
             serializer.save()
