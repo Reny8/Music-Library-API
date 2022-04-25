@@ -35,7 +35,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"Inside\",\r\n    \"artist\": \"Bo Burnham\",\r\n    \"album\": \"Inside\",\r\n    \"release_date\": \"2021-01-01\",\r\n    \"genre\": \"Musical\"\r\n}",
+					"raw": "{\r\n    \"title\": \"Inside\",\r\n    \"artist\": \"Bo Burnham\",\r\n    \"album\": \"Inside\",\r\n    \"release_date\": \"2021-01-01\",\r\n    \"genre\": \"Musical\",\r\n    \"likes\": 0\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -91,7 +91,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"Wait A Minute\",\r\n    \"artist\": \"Willow Smith\",\r\n    \"album\": \"Ardipithecus\",\r\n    \"release_date\": \"2015-12-11\",\r\n    \"genre\": \"R&B\"\r\n}",
+					"raw": "{\r\n    \"title\": \"Wait A Minute\",\r\n    \"artist\": \"Willow Smith\",\r\n    \"album\": \"Ardipithecus\",\r\n    \"release_date\": \"2015-12-11\",\r\n    \"genre\": \"R&B\",\r\n    \"likes\": 0\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -135,6 +135,39 @@
 					"path": [
 						"music",
 						"6",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"likes\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/music/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"music",
+						"1",
 						""
 					]
 				}

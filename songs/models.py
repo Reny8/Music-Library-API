@@ -9,6 +9,5 @@ class Song(models.Model):
     genre = models.CharField(max_length=100)
     likes = models.IntegerField()
 
-    def number_of_likes(self):
-        return self.likes.count()
+
     
