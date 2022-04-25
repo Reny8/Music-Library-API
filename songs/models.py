@@ -7,4 +7,8 @@ class Song(models.Model):
     album = models.CharField(max_length= 100)
     release_date = models.DateField()
     genre = models.CharField(max_length=100)
+    likes = models.IntegerField()
+
+    def number_of_likes(self):
+        return self.likes.count()
     
