@@ -8,6 +8,6 @@ class Song(models.Model):
     release_date = models.DateField()
     genre = models.CharField(max_length=100)
     likes = models.IntegerField()
-
+    album_image = models.CharField(max_length=300)
 
     
